@@ -1,1 +1,3 @@
-resto_clean_full.csv
+*.csv
+*.pickle
+full-preprocessed

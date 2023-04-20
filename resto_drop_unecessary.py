@@ -6,8 +6,8 @@ import pickle
 df = pd.read_csv('resto_clean_full.csv',
                  delimiter=';', header=0)
 
-df.drop(['ID', 'Name', 'Location', 'Address', 'Delivery', 'Rating Count',
-        'Highest Price Name', 'Lowest Price Name', 'Rating'], axis=1, inplace=True)
+df.drop(['ID', 'Name', 'Location', 'Address', 'Delivery',
+        'Highest Price Name', 'Lowest Price Name'], axis=1, inplace=True)
 
 df.to_csv('resto_cleaned.csv', index=False, sep=";",
           encoding='utf-8', quoting=csv.QUOTE_NONNUMERIC)
